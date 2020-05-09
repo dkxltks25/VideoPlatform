@@ -12,5 +12,5 @@
 3. 모델 생성 [x]
 
 
-# 모데링
+# 모델링
 ![ex_screenshot](./modeling.png)
