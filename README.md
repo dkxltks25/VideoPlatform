@@ -37,6 +37,6 @@
 
 
 # 데이터베이스 모델링
-![ex_screenshot](./modeling.png)
+![ex_screenshot](./modeling1.png)
 
 
