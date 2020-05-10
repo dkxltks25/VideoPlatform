@@ -7,8 +7,8 @@ const allTypes = fileLoader(path.join(__dirname, "/api/**/*.graphql"));
 const allResolvers = fileLoader(path.join(__dirname, "/api/**/*.js"));
 
 const schema = new makeExecutableSchema({
-    resolvers:allResolvers,
-    typeDefs:allTypes
+    resolvers:mergeResolvers(allResolvers),
+    typeDefs:mergeTypes(allTypes)
 })
 
 export default schema;
