@@ -25,6 +25,7 @@ const UserSchema = new mongoose.Schema({
   },
   loginSecret: String,
 });
-
+UserSchema.pre("remove", (data) => console.log(data));
 const model = mongoose.model("User", UserSchema);
+
 export default model;
