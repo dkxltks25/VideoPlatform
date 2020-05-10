@@ -2,7 +2,7 @@
 유튜브 클론코딩 + 동영상스트리밍( node js + mongodb + graphql + react + reactNative)
 
 # api 기능 리스트
-1.  [User]  회원가입 - createAccount [X]
+1.  [User]  회원가입 - createAccount [O]
 2.  [User]  이메일인증 - requestSecret #랜덤 문자열 전송 [X]
 3.  [User]  로그인 - loginUser [X]
 4.  [User]  사용자 정보 변경 - editProfile [X]
