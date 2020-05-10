@@ -1,0 +1,9 @@
+type User{ 
+    id:ID!,
+    username:String!,
+    email:String!,
+    password:String!,
+    avatar:String!
+    gender:String!,
+    loginSecret:String
+}
