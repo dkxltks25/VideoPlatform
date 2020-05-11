@@ -1,15 +1,13 @@
-import mongoose from "mongoose";
-
-const UserSchema = new mongoose.Schema({
+import mongoose, { Schema } from "mongoose";
+const UserSchema = new Schema({
   username: {
     type: String,
-    text: true,
     required: true,
   },
   email: {
     type: String,
-    unique: true,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
@@ -19,13 +17,62 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  gender: {
-    type: String,
-    enum: ["male", "female"],
+  subscriber: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "user",
+    },
+  ],
+  subscribing: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "user",
+    },
+  ],
+  likes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "like",
+    },
+  ],
+  unlikes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "unlike",
+    },
+  ],
+  videos: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "video",
+    },
+  ],
+  postss: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "posts",
+    },
+  ],
+  playlists: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "playlist",
+    },
+  ],
+  views: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "views",
+    },
+  ],
+  createAt: {
+    type: Date,
+    default: Date.now,
   },
-  loginSecret: String,
+  updateAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
-UserSchema.pre("remove", (data) => console.log(data));
 const model = mongoose.model("User", UserSchema);
-
 export default model;
