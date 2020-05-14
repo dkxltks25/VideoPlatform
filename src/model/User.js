@@ -47,10 +47,10 @@ const UserSchema = new Schema({
       ref: "video",
     },
   ],
-  postss: [
+  posts: [
     {
       type: Schema.Types.ObjectId,
-      ref: "posts",
+      ref: "post",
     },
   ],
   playlists: [
@@ -74,5 +74,5 @@ const UserSchema = new Schema({
     default: Date.now,
   },
 });
-const model = mongoose.model("User", UserSchema);
+const model = mongoose.model("user", UserSchema);
 export default model;

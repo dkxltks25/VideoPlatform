@@ -1,9 +1,23 @@
-type User{ 
-    id:ID!,
-    username:String!,
-    email:String!,
-    password:String!,
-    avatar:String!
-    gender:String!,
-    loginSecret:String
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  password: String!
+  avatar: String!
+  gender: String!
+  loginSecret: String
+  Videos: [Video!]!
+  createAt: Date!
+  updateAt: Date!
+}
+
+type Video {
+  id: ID!
+  title: String!
+  thumbnail: String!
+  viewCount: Int!
+  playtime: String
+  user: User!
+  createAt: Date!
+  updateAt: Date!
 }

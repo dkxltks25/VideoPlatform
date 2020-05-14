@@ -4,8 +4,9 @@ export default {
   Mutation: {
     deleteUser: async (_, args) => {
       const { id } = args;
-      // 사용자 본인 인증 로직 필요....
-      //테스트 로직
+      if (id) {
+        await (await User.findById({ _id: id })).execPopulate(err, data);
+      }
     },
   },
 };
