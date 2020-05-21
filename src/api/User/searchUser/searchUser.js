@@ -5,7 +5,7 @@ export default {
   Query: {
     searchUser: async (_, args) => {
       const { term } = args;
-      return await User.find({ $text: { $search: term } });
+      return await User.find();
     },
   },
 };

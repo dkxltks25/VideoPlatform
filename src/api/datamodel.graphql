@@ -7,8 +7,8 @@ type User {
   gender: String!
   loginSecret: String
   Videos: [Video!]!
-  createAt: Date!
-  updateAt: Date!
+  createAt: String!
+  updateAt: String!
 }
 
 type Video {
@@ -18,6 +18,6 @@ type Video {
   viewCount: Int!
   playtime: String
   user: User!
-  createAt: Date!
-  updateAt: Date!
+  createAt: String!
+  updateAt: String!
 }
