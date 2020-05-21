@@ -3,7 +3,7 @@
 
 # api 기능 리스트
 1.  [User]  회원가입 - createAccount [O]
-2.  [User]  이메일인증 - requestSecret #랜덤 문자열 전송 [X]
+2.  [User]  이메일인증 - requestSecret #랜덤 문자열 전송 [O]
 3.  [User]  로그인 - loginUser [X]
 4.  [User]  사용자 정보 변경 - editProfile [X]
 5.  [User]  비밀번호 찾기 - findPassword [X]

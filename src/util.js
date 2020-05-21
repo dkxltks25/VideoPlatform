@@ -5,7 +5,6 @@ import smtpTransport from "nodemailer-smtp-transport";
 
 export const createSecret = ()=> crypto.randomBytes(64).toString('hex');
 
-
 const sendMail = (email) => {
     const option = smtpTransport({
       service: "gmail",

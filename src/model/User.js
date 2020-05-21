@@ -17,6 +17,7 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  loginSecret:String,
   subscriber: [
     {
       type: Schema.Types.ObjectId,
