@@ -1,4 +1,5 @@
 import { User } from "../../../model";
+import { generateToken } from "../../../util";
 export default {
   Mutation: {
     loginUser: async (_, args) => {
@@ -6,9 +7,9 @@ export default {
       try {
         const user = await User.findOne({ email, password });
         if(user){
-            throw Error("Wrong Email and password");
+            return generateToken(user.id);
         }else{
-            
+            throw Error("Wrong Email and password");
         }
         return "token";
       } catch (error) {
