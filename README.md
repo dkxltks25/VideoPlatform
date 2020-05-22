@@ -9,7 +9,7 @@
 5.  [User]  비밀번호 찾기 - findPassword [X]
 6.  [User]  계정 삭제 - deleteUser [X]
 0.  [User]  사용자(채널)조회 - searchUser [X]
-0.  [User]  채널구독/취소 - subscribeUser #toggle  [X]
+0.  [User]  채널구독/취소 - subscribeUser #toggle  [O]
 0.  [Video] 동영상조회 - searchVideo [X]
 7.  [Video] 동영상업로드 - uploadVideo [X]
 8.  [Video] 동영상삭제 - deleteVideo [X]

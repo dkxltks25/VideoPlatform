@@ -2,10 +2,16 @@ import { User } from "../../../model";
 import {isAuthenticated} from "../../../middlewares";
 export default {
   Mutation: {
-    deleteUser: async (_, args,{request}) => {
+    deleteUser: async (_, __,{request}) => {
       isAuthenticated(request);
-      console.log(request.user);
-      const { id } = args;
+      const {user} = {request};
+      try{
+        await User.findByIdAndDelete({_id:user.id});
+        return true;
+      }catch(error){
+        console.log(error);
+        return false;
+      }
       return true;
     },
   },
