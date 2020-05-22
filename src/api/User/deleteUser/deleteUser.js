@@ -1,12 +1,12 @@
 import { User } from "../../../model";
-
+import {isAuthenticated} from "../../../middlewares";
 export default {
   Mutation: {
-    deleteUser: async (_, args) => {
+    deleteUser: async (_, args,{request}) => {
+      isAuthenticated(request);
+      console.log(request.user);
       const { id } = args;
-      if (id) {
-        await (await User.findById({ _id: id })).execPopulate(err, data);
-      }
+      return true;
     },
   },
 };

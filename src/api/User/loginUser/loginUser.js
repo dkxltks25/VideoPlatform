@@ -11,7 +11,6 @@ export default {
         }else{
             throw Error("Wrong Email and password");
         }
-        return "token";
       } catch (error) {
         console.log(error);
         throw Error("Wrong Email and Password");
