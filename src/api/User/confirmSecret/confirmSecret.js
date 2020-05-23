@@ -1,6 +1,8 @@
 import {User} from "../../../model";
 export default {
-    Mutation: async(_,args)=>{
-        throw Error;
+    Mutation:{
+        confirmSecret: async(_,args)=>{
+            throw Error("wrong")
+        }
     }
 }

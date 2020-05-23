@@ -27,3 +27,9 @@ type Category {
   id: ID!
   name: String!
 }
+type PlayList {
+  id: ID!
+  user: User!
+  videos: [Video!]!
+  name: String!
+}
