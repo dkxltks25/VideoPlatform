@@ -9,7 +9,6 @@ export default {
       try {
         const findPlayList = await PlayList.findOne({ _id: playListId });
         const isExistsVideoInPlayList = findPlayList.videos.indexOf(videoid) === -1 ? false :true;
-        console.log(isExistsVideoInPlayList); 
         if(isExistsVideoInPlayList){
             throw Error("is Exsists Video")
         }else{

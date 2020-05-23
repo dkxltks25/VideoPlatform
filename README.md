@@ -19,7 +19,7 @@
 0.  [Video] 내동영상보기 - userVideos [O]
 13. [Video] 동영상수정 - editVideo # 동영상 재업로드 불가 [X]
 0.  [PlayList] 재생목록생성 - createPlayList [O]
-14. [PlayList] 재생목록추가 - addPlayList [X]
+14. [PlayList] 재생목록추가 - addPlayList [O]
 15. [PlayList] 재생목록삭제 - deletePlayList [X]
 16. [PlayList] 재생목록수정 - editPlayList [X]
 17. [PlayList] 재생목록조회 - PlayLists [X]

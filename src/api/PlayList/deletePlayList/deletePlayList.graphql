@@ -1,0 +1,8 @@
+enum TARGET {
+  LIST
+  ITEM
+}
+
+type Mutation {
+  deletePlayList(playListId:String,TARGET: String, ids: [String!]): Boolean!
+}
