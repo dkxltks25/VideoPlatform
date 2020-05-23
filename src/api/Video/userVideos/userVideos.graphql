@@ -1,0 +1,3 @@
+type Query{
+    userVideos(id:String!):[Video!]!
+}
