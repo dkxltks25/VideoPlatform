@@ -1,0 +1,9 @@
+type Mutation {
+  uploadVideo(
+    title: String!
+    description: String!
+    thumbnail: String!
+    playtime: String!
+    category: String!
+  ): Video!
+}

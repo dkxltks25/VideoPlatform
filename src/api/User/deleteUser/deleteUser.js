@@ -6,10 +6,6 @@ export default {
       isAuthenticated(request);
       const { user } = request;
       try {
-        //        await User.findByIdAndDelete({ _id: user.id }, { $pull: {'subscriber':user.id} });
-
-        // const findUser = await User.find({ subscriber: { $in: "5ec80e33a2a16141d3883c24" } });
-
         const findUser = await User.findByIdAndRemove(
           { _id: user.id },
           { subscriber: { $in: "5ec80e33a2a16141d3883c24" } }

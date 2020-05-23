@@ -14,10 +14,16 @@ type User {
 type Video {
   id: ID!
   title: String!
+  description: String!
   thumbnail: String!
   viewCount: Int!
   playtime: String
   user: User!
   createAt: String!
   updateAt: String!
+}
+
+type Category {
+  id: ID!
+  name: String!
 }
