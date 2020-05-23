@@ -1,7 +1,9 @@
 import { PlayList } from "../../../model";
+import { isAuthenticated } from "../../../middlewares";
 export default {
   Mutation: {
     createPlayList: async (_, args, { request }) => {
+      isAuthenticated(request);
       const { name } = args;
       const { user } = request;
       try {
