@@ -1,0 +1,3 @@
+type Query {
+  searchVideos(term: String!): [Video]!
+}
