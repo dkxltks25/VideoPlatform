@@ -1,0 +1,4 @@
+
+type Mutation{ 
+    editPlayList(id:String!,name:String!):PlayList!
+}

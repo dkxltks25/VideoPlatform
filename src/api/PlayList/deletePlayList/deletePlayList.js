@@ -16,12 +16,13 @@ export default {
         });
       } else if (TARGET === LIST) {
         ids.map(async (id) => {
-          await PlayList.deleteOne({id});
-          user.playLists.pull({id});
+          await PlayList.deleteOne({ id });
+          user.playLists.pull({ id });
           user.save();
-          
         });
+        return true;
       } else {
+        return false;
         throw Error("not Exists TARGET");
       }
     },
