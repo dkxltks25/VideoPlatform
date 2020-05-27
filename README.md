@@ -22,7 +22,7 @@
 14. [PlayList] 재생목록추가 - addPlayList [O]
 15. [PlayList] 재생목록삭제 - deletePlayList [O]
 16. [PlayList] 재생목록수정 - editPlayList [O]
-17. [PlayList] 재생목록조회 - PlayLists [X]
+17. [PlayList] 재생목록조회 - PlayLists [O]
 18. [Like] 좋아요 - like [X]
 19. [UnLike] 싫어요 - unlike [X]
 20. [Comment] 댓글달기 - addComment [X]
