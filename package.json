@@ -20,7 +20,7 @@
     "merge-graphql-schemas": "^1.7.8",
     "mongoose": "^5.9.13",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^2.0.3",
     "passport": "^0.4.1",
